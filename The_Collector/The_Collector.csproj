@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58055EFF-79CC-436F-9096-CDD64022C066}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>The_Collector</RootNamespace>
+    <AssemblyName>The_Collector</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Player.cs" />
+    <Compile Include="Classes\Question.cs" />
+    <Compile Include="Classes\Soul.cs" />
+    <Compile Include="Scenes\AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\EndGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\EndGameForm.Designer.cs">
+      <DependentUpon>EndGameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\InstructionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\InstructionForm.Designer.cs">
+      <DependentUpon>InstructionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\LevelFiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\LevelFiveForm.Designer.cs">
+      <DependentUpon>LevelFiveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\LevelFourForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\LevelFourForm.Designer.cs">
+      <DependentUpon>LevelFourForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\LevelOneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\LevelOneForm.Designer.cs">
+      <DependentUpon>LevelOneForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\LevelThreeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\LevelThreeeForm.Designer.cs">
+      <DependentUpon>LevelThreeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\LevelTwoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\LevelTwoForm.Designer.cs">
+      <DependentUpon>LevelTwoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\QuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\QuestionForm.Designer.cs">
+      <DependentUpon>QuestionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\StartGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\StartGameForm.Designer.cs">
+      <DependentUpon>StartGameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\WinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scenes\WinForm.Designer.cs">
+      <DependentUpon>WinForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Scenes\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\EndGameForm.resx">
+      <DependentUpon>EndGameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Scenes\InstructionForm.resx">
+      <DependentUpon>InstructionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\LevelFiveForm.resx">
+      <DependentUpon>LevelFiveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\LevelFourForm.resx">
+      <DependentUpon>LevelFourForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\LevelOneForm.resx">
+      <DependentUpon>LevelOneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\LevelThreeeForm.resx">
+      <DependentUpon>LevelThreeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\LevelTwoForm.resx">
+      <DependentUpon>LevelTwoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\QuestionForm.resx">
+      <DependentUpon>QuestionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\StartGameForm.resx">
+      <DependentUpon>StartGameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scenes\WinForm.resx">
+      <DependentUpon>WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Characters\bat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Backgraunds\blocks.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Backgraunds\block.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\TheCollectorTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Characters\frog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Characters\ghost.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Characters\skeleton.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\Boy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\Boy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\BoyUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\GirlUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Backgraunds\blockLevelOne.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Characters\portal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\soulsImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\hartImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\heartImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\portalImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\portalImage.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Backgraunds\blockQuestion.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Backgraunds\blockPrePro.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Backgraunds\blocksPro.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\trofeoImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\controlsImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Controls\CapImage.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
